@@ -20,5 +20,6 @@ func main() {
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.SendString("halo riyan")
 	})
+	app.Get("/ninja", getNinja)
 	app.Listen(":8080")
 }
